@@ -9,11 +9,11 @@ class App extends React.Component {
   }
 
   render() {
-      return {
+      return (
           <div className="container">
-              <input className="btn btn-primary" type="submit" value="Alert" onClicka={() => {alert("Alert button onClick");}}/>
+              <input className="btn btn-primary" type="submit" value="Alert" onClick={() => {alert("Alert button onClick");}}/>
           </div>
-      }
+      )
   }
 
 }

@@ -23,6 +23,8 @@ app.get('/', (req, res) => {
   })
 })
 
+// Specify the location for static files
+app.use(express.static(__dirname + "/dist"))
 
 app.listen(port, () => {
     console.log(__dirname);
